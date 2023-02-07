@@ -30,7 +30,7 @@ if st.button('Generate file '):
     st.download_button(
         label="Download data as CSV",   
         data=csv,
-        file_name=st.text_input('Please enter file name:'),
+        file_name='domains.csv',
         mime='text/csv',  
     )
 
