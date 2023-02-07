@@ -27,12 +27,12 @@ def convert_df(df):
 
 if st.button('Generate file '):
     csv = convert_df(df['domain'])
-    # name = 
     st.download_button(
         label="Download data as CSV",   
         data=csv,
-        file_name='my_df.csv'),
-        mime='text/csv')
+        file_name=st.text_input('Please enter file name:'),
+        mime='text/csv',  
+    )
 
 
 
